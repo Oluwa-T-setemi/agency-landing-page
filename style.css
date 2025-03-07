@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: aliceblue;
+}
 section {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background: url(../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg) center/cover no-repeat;
     font-family: "Barlow", sans-serif;
@@ -36,14 +41,19 @@ nav {
     border-radius: 20px;
     transition: 0.3s;
 }
-.hero-list li a:hover, .active {
+.hero-list li a:active{
+    background-color: transparent;
+    color: white;
+    transition: 2s;
+}
+.hero-list li a:hover{
     background-color: white;
     color: black;
-}
+} 
 .checkbox {
     width: 30px;
     height: 30px;
-    display: block;
+    display: none;
     cursor: pointer;
     font-size: 40px;
     color: white;
@@ -54,22 +64,212 @@ nav {
 #check {
     display: none;
 }
+.hero-text{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Fraunces", serif;
+    color: white;
+    font-size: 40px;
+    margin-top: 0.5rem;
+    margin: 40px auto;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+}
+.hero-text img{
+    height: 10%;
+    width: 50px;
+    margin-top: 0.01rem;
+}
+.transform1, .transform2{
+    width: 100%;
+}
+.text{
+    width: 50%;
+    height: 50vh;
+    text-align: justify;
+    padding: 50px;
+    
+}
+.text .block{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+}
+.text p{
+    font-family: "Barlow", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+.text, .image{
+    float: left;
+}
+.image{
+    width: 50%;
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg) center/cover no-repeat;
+    height: 50vh;
+}
+.image3, .image4{
+   float: left;
+    color: hsl(167, 40%, 24%);
+    padding-top: 10rem;
+    text-align: center;
+}
+.image3{
+    width: 50%;
+    height: 50vh;
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg) center/cover no-repeat;
+}
+.image4{
+    width: 50%;
+    height: 50vh;
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg) center/cover no-repeat;
+}
+.text a{
+    font-family: "Fraunces", serif;
+    color: black;
+    text-decoration-thickness: 5px;
+    text-decoration-color:hsl(51, 100%, 49%) ;
+    line-height: 40px;
+}
+.transform2 .text a{
+    text-decoration-color: hsl(7, 99%, 70%);
+}
+.image1{
+    width: 50%;
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg) center/cover no-repeat;
+    height: 50vh;
+}
+.text, .image1{
+    float: left;
+}
+.image3 h2, .image4 h2{
+    font-family: "Fraunces", serif;
+    line-height: 60px;
+}
+.image3 p, .image4 p{
+    font-family: "Barlow", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.testimonial{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    background-color: aliceblue;
+}
+.client{
+    height: fit-content;
+    width: 100%;
+}
+.loop{
+    width: calc(30% - 20px);
+    height: 300px;
+    margin: 20px;
+    float: left;
+}
+.loop img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.testimonial h1{
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 50px;
+}
+.loop p{
+    font-family: "barlow", sans-serif;
+    line-height: 30px;
+    font-size: 12px;
+}
+footer{
+    width: 100%;
+    background-color: hsl(168, 45%, 64%);
+    text-align: center;
+    padding-top: 100px;
+}
+footer h1{
+    font-family: "barlow", sans-serif;
+    color: hsl(167, 40%, 24%);
+    line-height: 140px;
+}
+footer ul li a{
+    color: hsl(167, 40%, 24%);
+    text-decoration: none;
+    font-family:"barlow", sans-serif;
+    font-size: 16px;
+}
+footer ul li a:hover{
+    color: white;
+}
+footer ul li{
+    display: inline;
+    margin: 30px;
+}
+.img{
+    width: 100%;
+}
+.img1, .img2, .img3, .img4{
+    height: 40vh;
+    float: left;
+    width: 25%;
+}
+.img1{
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg) center/cover no-repeat;
+}
+.img2{
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-gallery-orange.jpg) center/cover no-repeat;
+}
+.img3{
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg) center/cover no-repeat;
+}
+.img4{
+    background: url(../sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg) center/cover no-repeat;
+}
+
+
+/*
+==================================== 
+media query 
+=====================================
+*/
 @media (max-width: 858px) {
     .checkbox {
         display: block;
+        position: fixed;
+        color: white;
+    }
+    .checkbox :active{
+        color: black;
     }
     .hero-list {
         position: fixed;
-        height: 100vh;
-        width: 100%;
+        height: 50vh;
+        width: 80%;
         top: 80px   ;
         left: -100%;
-        background: transparent;
-        color: white;
+        background: white;
         backdrop-filter: blur(10px);
         flex-direction: column;
         align-items: center;
-        transition: all 0.5s ease-in-out;
+    }
+    .hero-list li  a:hover{
+        background-color: hsl(51, 100%, 49%);
+        color: black;
     }
     .hero-list li {
         display: block;
@@ -77,12 +277,53 @@ nav {
     }
     .hero-list li a {
         font-size: 25px;
-        line-height: 100px;
+        line-height: 50px;
+        color: hsl(213, 9%, 39%);
     }
-    #check:checked ~ .hero-list {
-        left: 0;
-    }
-    .hero-list li a:hover, .active {
+    .active{
         background-color: white;
         color: black;
+    }
+    .active:hover{
+        background-color: white;
+        color: black;
+    }
+    #check:checked ~ .hero-list {
+        left: 70px;
+    }
+    .hero-text{
+        width: 100%;
+    }
+    .text, .image{
+        display: block;
+        width: 100%;
+    }
+    .text, .image1{
+        display: block;
+        width: 100%;
+    }
+    .image3, .image4{
+        display: block;
+        width: 100%;
+    }
+    .img img{
+        display: block;
+        width: 100%;
+    }
+    .transform1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text{
+        text-align:  center;
+    }
+    .loop{
+        display: block;
+        width: calc(100% - 60px);
+        margin: 30px;
+    }
+    .img1, .img2, .img3, .img4{
+        display: block;
+        width: 100%;
+    }
 }
